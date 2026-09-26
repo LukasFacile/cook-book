@@ -3,42 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="A personal cookbook. Recipes to keep, cook, and come back to."
-    />
-    <title>The recipe box · Cook Book</title>
+    <meta name="description" content="Browse and search recipes." />
+    <title>Recipes</title>
     <link rel="stylesheet" href="web/styles.css" />
     <script src="web/app.js" defer></script>
   </head>
   <body>
     <a class="skip" href="#recipes">Skip to recipes</a>
-    <header class="masthead">
-      <a href="./" class="brand">cook book<span class="brand-dot">.</span></a
-      ><span class="masthead-note">A PERSONAL COLLECTION</span
-      ><button id="print" type="button" hidden>Print recipes ↗</button>
-    </header>
     <main>
-      <section class="intro" aria-labelledby="page-title">
-        <div>
-          <p class="eyebrow">GOOD FOOD. KEPT CLOSE.</p>
-          <h1 id="page-title">
-            A little collection.<br />A lot of <em>comfort.</em>
-          </h1>
-          <p class="intro-copy">
-            Recipes to keep, cook, and come back to.<br />From my kitchen
-            notebook to yours.
-          </p>
-        </div>
-        <div class="book-mark" aria-hidden="true">
-          <span>THE</span><strong>recipe<br />box</strong
-          ><span>MADE TO BE USED</span>
-        </div>
-      </section>
+      <header class="masthead">
+        <h1>Recipes</h1>
+        <button id="print" type="button" hidden>Print recipes</button>
+      </header>
       <section aria-label="Recipe collection">
         <div class="collection-bar">
           <div class="collection-title">
-            The collection
             <span id="count" role="status">1 recipe(s)</span>
           </div>
           <div id="search-controls" hidden>
@@ -53,20 +32,15 @@
           </div>
         </div>
         <div id="recipes"><article class="recipe" id="Kimchi%20Stew%20%20-%20Kimchi%20Jigae" data-search="kimchi stew  - kimchi jigae korean stew kimchi kimchi, chopped protein (chicken, beef, pork, tuna) green onion, chopped seperate whites and greens gochujang gochugaru water or broth tofu fish sauce soy sauce sesame oil served with rice">
-      <header class="recipe-header"><div><p class="eyebrow">FROM THE RECIPE BOX</p><h2>Kimchi Stew  - Kimchi Jigae</h2><div class="tags"><span class="tag">korean</span><span class="tag">stew</span><span class="tag">kimchi</span></div></div>
-      <a class="permalink" href="#Kimchi%20Stew%20%20-%20Kimchi%20Jigae" aria-label="Link to Kimchi Stew  - Kimchi Jigae">Recipe link ↗</a></header>
-      <div class="recipe-body"><section class="ingredients"><h3>Ingredients <span>11</span></h3><p class="hint">Check things off as you go.</p><ul><li><label><input type="checkbox"><span>Kimchi, chopped</span></label></li><li><label><input type="checkbox"><span>Protein (Chicken, Beef, Pork, Tuna)</span></label></li><li><label><input type="checkbox"><span>Green Onion, Chopped seperate whites and greens</span></label></li><li><label><input type="checkbox"><span>Gochujang</span></label></li><li><label><input type="checkbox"><span>Gochugaru</span></label></li><li><label><input type="checkbox"><span>Water or Broth</span></label></li><li><label><input type="checkbox"><span>Tofu</span></label></li><li><label><input type="checkbox"><span>Fish Sauce</span></label></li><li><label><input type="checkbox"><span>Soy Sauce</span></label></li><li><label><input type="checkbox"><span>Sesame Oil</span></label></li><li><label><input type="checkbox"><span>Served with Rice</span></label></li></ul></section>
-      <section class="method"><h3>Let’s cook.</h3><ol><li>Preheat Pot with some neutral oil.</li><li>Add chopped kimchi and saute</li><li>Add protein and mix</li><li>Add gochujang and gochugaru to taste and mix</li><li>Add white part of chopped green onion</li><li>add tofu and mix</li><li>add water or broth mix</li><li>season to taste with soy sauce, fish sauce, and sesame oil</li><li>serve with rice</li></ol></section></div></article></div>
+      <header class="recipe-header"><div><h2>Kimchi Stew  - Kimchi Jigae</h2><div class="tags"><span class="tag">korean</span><span class="tag">stew</span><span class="tag">kimchi</span></div></div>
+      <a class="permalink" href="#Kimchi%20Stew%20%20-%20Kimchi%20Jigae" aria-label="Link to Kimchi Stew  - Kimchi Jigae">Recipe link</a></header>
+      <div class="recipe-body"><section class="ingredients"><h3>Ingredients <span>11</span></h3><ul><li><label><input type="checkbox"><span>Kimchi, chopped</span></label></li><li><label><input type="checkbox"><span>Protein (Chicken, Beef, Pork, Tuna)</span></label></li><li><label><input type="checkbox"><span>Green Onion, Chopped seperate whites and greens</span></label></li><li><label><input type="checkbox"><span>Gochujang</span></label></li><li><label><input type="checkbox"><span>Gochugaru</span></label></li><li><label><input type="checkbox"><span>Water or Broth</span></label></li><li><label><input type="checkbox"><span>Tofu</span></label></li><li><label><input type="checkbox"><span>Fish Sauce</span></label></li><li><label><input type="checkbox"><span>Soy Sauce</span></label></li><li><label><input type="checkbox"><span>Sesame Oil</span></label></li><li><label><input type="checkbox"><span>Served with Rice</span></label></li></ul></section>
+      <section class="method"><h3>Instructions</h3><ol><li>Preheat Pot with some neutral oil.</li><li>Add chopped kimchi and saute</li><li>Add protein and mix</li><li>Add gochujang and gochugaru to taste and mix</li><li>Add white part of chopped green onion</li><li>add tofu and mix</li><li>add water or broth mix</li><li>season to taste with soy sauce, fish sauce, and sesame oil</li><li>serve with rice</li></ol></section></div></article></div>
         <div id="empty" class="empty" hidden>
-          <h2>Nothing in the box just yet.</h2>
-          <p>Try another recipe, ingredient, or tag.</p>
+          <h2>No recipes found.</h2>
           <button id="clear" type="button">Clear search</button>
         </div>
       </section>
     </main>
-    <footer>
-      <span class="brand">cook book.</span
-      ><span>A growing collection, one good meal at a time.</span>
-    </footer>
   </body>
 </html>

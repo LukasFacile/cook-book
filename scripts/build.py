@@ -29,10 +29,10 @@ def recipe(path):
     badges = "".join(f'<span class="tag">{escape(tag)}</span>' for tag in dict.fromkeys(tags))
     search = escape(" ".join([title, *tags, *sections['ingredients']]).lower(), quote=True)
     return f'''<article class="recipe" id="{slug}" data-search="{search}">
-      <header class="recipe-header"><div><p class="eyebrow">FROM THE RECIPE BOX</p><h2>{escape(title)}</h2><div class="tags">{badges}</div></div>
-      <a class="permalink" href="#{slug}" aria-label="Link to {escape(title, quote=True)}">Recipe link ↗</a></header>
-      <div class="recipe-body"><section class="ingredients"><h3>Ingredients <span>{len(sections['ingredients']):02}</span></h3><p class="hint">Check things off as you go.</p><ul>{ingredients}</ul></section>
-      <section class="method"><h3>Let’s cook.</h3><ol>{steps}</ol></section></div></article>'''
+      <header class="recipe-header"><div><h2>{escape(title)}</h2><div class="tags">{badges}</div></div>
+      <a class="permalink" href="#{slug}" aria-label="Link to {escape(title, quote=True)}">Recipe link</a></header>
+      <div class="recipe-body"><section class="ingredients"><h3>Ingredients <span>{len(sections['ingredients']):02}</span></h3><ul>{ingredients}</ul></section>
+      <section class="method"><h3>Instructions</h3><ol>{steps}</ol></section></div></article>'''
 
 
 def main():

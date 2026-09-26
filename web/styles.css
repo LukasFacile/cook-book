@@ -53,49 +53,17 @@ button:hover {
 [hidden] {
   display: none !important;
 }
-.masthead,
-main,
-footer {
+main {
   width: min(1160px, calc(100% - 96px));
   margin: auto;
 }
 .masthead {
-  min-height: 105px;
+  min-height: 84px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
   border-bottom: 1px solid var(--line);
-}
-.brand {
-  font-family: Georgia, serif;
-  font-size: 30px;
-  font-weight: bold;
-  letter-spacing: -1.5px;
-  text-decoration: none;
-}
-.brand-dot {
-  color: var(--red);
-}
-.masthead-note,
-.eyebrow {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-.masthead-note {
-  color: var(--muted);
-}
-.intro {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 68px 0 62px;
-}
-.eyebrow {
-  color: var(--green);
-  margin: 0 0 20px;
 }
 h1,
 h2,
@@ -104,50 +72,14 @@ h3 {
   font-weight: normal;
 }
 h1 {
-  font-size: clamp(44px, 5.6vw, 72px);
-  line-height: 1.08;
-  letter-spacing: -3px;
-  margin: 0 0 25px;
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0;
 }
 h1 em {
   color: var(--green);
 }
-.intro-copy {
-  color: var(--muted);
-  margin: 0;
-  font-size: 16px;
-}
-.book-mark {
-  margin-right: 65px;
-  width: 192px;
-  height: 226px;
-  border: 1px solid var(--green);
-  outline: 1px solid var(--green);
-  outline-offset: 7px;
-  border-radius: 100px 100px 4px 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--green);
-  transform: rotate(7deg);
-  background: #e7e9da;
-}
-.book-mark span {
-  font-size: 9px;
-  letter-spacing: 2px;
-}
-.book-mark strong {
-  font-family: Georgia, serif;
-  font-weight: normal;
-  font-style: italic;
-  font-size: 49px;
-  line-height: 0.98;
-  text-align: center;
-  margin: 15px 0 22px;
-}
 .collection-bar {
-  border-top: 1px solid var(--ink);
   border-bottom: 1px solid var(--line);
   padding: 22px 0;
   display: flex;
@@ -159,7 +91,6 @@ h1 em {
   font-size: 18px;
 }
 .collection-title span {
-  margin-left: 15px;
   font-size: 12px;
   color: var(--muted);
 }
@@ -185,10 +116,6 @@ input[type="search"] {
   align-items: center;
   gap: 24px;
   border-bottom: 1px solid var(--line);
-}
-.recipe-header .eyebrow {
-  font-size: 9px;
-  margin-bottom: 10px;
 }
 h2 {
   font-size: 36px;
@@ -234,14 +161,9 @@ h3 span {
   background: #f0f1e6;
   border-right: 1px solid var(--line);
 }
-.hint {
-  margin: 0 0 22px;
-  font-size: 12px;
-  color: var(--muted);
-}
 .ingredients ul {
   list-style: none;
-  margin: 0;
+  margin: 16px 0 0;
   padding: 0;
 }
 .ingredients li + li {
@@ -302,21 +224,6 @@ h3 span {
 .empty h2 {
   font-size: 30px;
 }
-footer {
-  border-top: 1px solid var(--line);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 0 36px;
-  color: var(--muted);
-  gap: 24px;
-}
-footer .brand {
-  font-size: 23px;
-}
-footer > span:last-child {
-  font-size: 12px;
-}
 .sr-only,
 .skip:not(:focus) {
   position: absolute;
@@ -334,43 +241,14 @@ footer > span:last-child {
   z-index: 2;
 }
 @media (max-width: 760px) {
-  .masthead,
-  main,
-  footer {
+  main {
     width: calc(100% - 36px);
   }
   .masthead {
     min-height: 80px;
   }
-  .masthead-note {
-    display: none;
-  }
-  .brand {
-    font-size: 26px;
-  }
-  .intro {
-    padding: 44px 0;
-    gap: 20px;
-  }
   h1 {
     letter-spacing: -2px;
-  }
-  .book-mark {
-    width: 115px;
-    height: 155px;
-    margin-right: 9px;
-    flex-shrink: 0;
-  }
-  .book-mark strong {
-    font-size: 33px;
-    margin: 12px 0;
-  }
-  .book-mark span {
-    font-size: 7px;
-    letter-spacing: 1px;
-  }
-  .intro-copy {
-    font-size: 14px;
   }
   .collection-bar {
     align-items: stretch;
@@ -403,22 +281,8 @@ footer > span:last-child {
   .recipe {
     margin-top: 22px;
   }
-  footer {
-    align-items: flex-start;
-  }
-  footer > span:last-child {
-    max-width: 185px;
-    text-align: right;
-  }
 }
-@media (max-width: 420px) {
-  .book-mark {
-    display: none;
-  }
-  h1 {
-    font-size: 46px;
-  }
-}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -430,11 +294,8 @@ footer > span:last-child {
     font-size: 12px;
   }
   .masthead,
-  .intro,
   .collection-bar,
-  footer,
   .permalink,
-  .hint,
   .skip {
     display: none !important;
   }
