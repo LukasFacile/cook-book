@@ -1,6 +1,6 @@
 # Ingredients
 * 1 lemon, zest and juice
-* ½ cup finely grated Parmesan
+* ½ cup finely grated Parmesan (real parm, grate it yourself)
 * ¼ cup mayonnaise
 * 1 tablespoon Dijon mustard
 * 2 oil-packed anchovies, drained and finely chopped
