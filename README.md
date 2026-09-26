@@ -2,6 +2,12 @@
 
 My personal cookbook, with a searchable, printable recipe page.
 
+View the cookbook at <https://lukasfacile.github.io/cook-book/>.
+
+GitHub Pages publishes from the root of `main`. After changing recipes, rebuild
+`index.html` and push it along with the notes to update the hosted page. The
+`.nojekyll` file keeps GitHub Pages from processing the site with Jekyll.
+
 Open `index.html` in a browser, or preview at <http://localhost:8000>:
 
 ```sh
